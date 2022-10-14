@@ -18,7 +18,7 @@ else:
 
 # End Python 2/3 compatibility
 
-_DEFAULT_CONFIG = '/usr/local/etc/kattisrc'
+_DEFAULT_CONFIG = os.path.join(os.getenv('HOME'), '.config/kattis/.kattisrc')
 _LANGUAGE_GUESS = {
     '.c': 'C',
     '.c++': 'C++',
